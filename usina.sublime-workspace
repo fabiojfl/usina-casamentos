@@ -3,19 +3,22 @@
 	{
 		"selected_items":
 		[
+			[
+				"g",
+				"gulp-clean-css"
+			],
+			[
+				"gulp",
+				"gulp-less"
+			],
+			[
+				"b",
+				"browser-sync"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"contents": "h",
-			"settings":
-			{
-				"buffer_size": 1,
-				"line_ending": "Windows",
-				"name": "h"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -54,14 +57,26 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina"
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/public"
 	],
 	"file_history":
 	[
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/gulpfile.js",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/public/build/css/style.css",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/assets/less/bootstrap.less",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/public/index.html",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/node_modules/jquery/dist/jquery.min.js",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/assets/less/style.less",
+		"/C/Users/Luci/Desktop/Desenvolvimento/usinadesons.com.br/gulpfile.js",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/default/index.html",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/.gulpfile.js",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/.gitignore",
+		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/gulp-browserSync-live-reload-bootstrap.txt"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -75,6 +90,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"src"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -98,52 +114,18 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"auto_name": "h",
-							"rulers":
-							[
-								70
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"wrap_width": 0
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 30.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 43.0
 	},
 	"layout":
 	{
@@ -176,7 +158,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 0.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -214,7 +196,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 145.0,
+	"side_bar_width": 234.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
