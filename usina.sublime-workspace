@@ -19,6 +19,34 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "const gulp = require('gulp');\nconst less = require('gulp-less');\nconst browserSync = require('browser-sync').create();\n\ngulp.task('browser-sync', function(){\n    browserSync.init({\n        proxy: \"localhost:2018\",\n        files:[\n          \"public/**/*.html\",\n          \"public/build/**/*.css\",\n          \"public/build/**/*.js\"\n        ] \n    })\n});\n\ngulp.task('bootstrap', function(){\n\tgulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css')\n\t.pipe(gulp.dest('./public/build/css'))\n});\n\ngulp.task('less', function(){\n    gulp.src('./assets/less/style.less')\n    .pipe(less())\n    .pipe(gulp.dest('./public/build/css'));\n});\n\ngulp.task('scripts', function(){\n\tgulp.src([\n\t\t'./node_modules/jquery/dist/jquery.min.js',\n\t\t'./node_modules/bootstrapdist/js/bootstrap.min.js'\n\t]).pipe(gulp.dest('./public/build/js'))\n});\n\ngulp.task('default',['browser-sync','bootstrap','less','scripts']);\n\n\n//const cleanCSS  = require('gulp-clean-css');\n\n/*\ngulp.task('minify-css', () => {\n  return gulp.src('public/build/bootstrap/*.css')\n    .pipe(cleanCSS({compatibility: 'ie8'}))\n    .pipe(gulp.dest('dist'));\n});\n*/",
+			"file": "gulpfile.js",
+			"file_size": 1152,
+			"file_write_time": 131684470261320781,
+			"settings":
+			{
+				"buffer_size": 1107,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 424,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/less/bootstrap.less",
+			"settings":
+			{
+				"buffer_size": 85,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -57,8 +85,6 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina",
-		"/C/Users/Luci/Desktop/Desenvolvimento/html_usina/public"
 	],
 	"file_history":
 	[
@@ -76,7 +102,7 @@
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -114,8 +140,95 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								752,
+								752
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								424,
+								424
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/less/bootstrap.less",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
