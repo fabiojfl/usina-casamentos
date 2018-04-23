@@ -6,9 +6,11 @@ gulp.task('browser-sync', function(){
     browserSync.init({
         proxy: "localhost:2018",
         files:[
-          "public/**/*.html",
-          "public/build/**/*.css",
-          "public/build/**/*.js"
+          "public/**/**.html",
+          "public/build/**/**.css",
+          "public/build/**/**.js",
+          "public/images/**/**.jpg",
+          "public/images/**/**.png"
         ] 
     })
 });
