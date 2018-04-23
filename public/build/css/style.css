@@ -16,8 +16,8 @@ body {
   color: #FFF;
   display: inline-block;
   border-radius: 30px;
-  padding: 10px 30px;
-  margin-top: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
   transition: ease .5s all;
 }
 .btn:hover {
@@ -84,4 +84,7 @@ body {
   display: inline-block;
   margin: 0;
   padding: 0;
+}
+#facility {
+  text-align: center;
 }

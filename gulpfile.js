@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const less = require('gulp-less');
 const browserSync = require('browser-sync').create();
 
+
 gulp.task('browser-sync', function(){
     browserSync.init({
         proxy: "localhost:2018",
@@ -33,7 +34,13 @@ gulp.task('scripts', function(){
 	]).pipe(gulp.dest('./public/build/js'))
 });
 
-gulp.task('default',['browser-sync','bootstrap','less','scripts']);
+gulp.task('watch', function(){
+  gulp.watch('./assets/less/style.less',['less']);
+  gulp.watch('./node_modules/jquery/dist/jquery.min.js',['js']);
+  gulp.watch('./node_modules/bootstrap/dist/js/bootstrap.min.js',['js']);
+});
+
+gulp.task('default',['browser-sync','bootstrap','less','scripts', 'watch']);
 
 
 //const cleanCSS  = require('gulp-clean-css');
