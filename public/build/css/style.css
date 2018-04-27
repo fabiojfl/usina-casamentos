@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic,latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,64 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  color: #7e7e7e;
+}
+p {
+  margin: 10px 0 10px 0;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v36/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 58px;
+  font-weight: normal;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  padding: 34px 0 5px 0;
+}
+h2:after {
+  content: '';
+  display: block;
+  background-color: #828282;
+  margin: 5px auto 0 auto;
+  width: 80px;
+  height: 2px;
+}
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 38px;
+  color: #4a4a48;
+}
+p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: initial;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+.subtitle {
+  margin-bottom: 50px;
 }
 .btn {
   background-color: #ef595d;
@@ -22,17 +81,70 @@ body {
 }
 .btn:hover {
   background-color: #ef3b5d;
+  color: #FFF;
 }
+.icon-container {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background-color: #ef3b5d;
+  border-radius: 30px;
+  position: relative;
+}
+.icon-container .material-icons {
+  display: block;
+  font-size: 110px;
+  color: #f9d4d5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+}
+.img-box-round {
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.img-box-label:before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 60px;
+  border-right: 2px solid #207b20;
+  background: transparent;
+  margin-bottom: 10px;
+}
+/*
+.icon-container{
+	position: relative;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	background-color: rgb(239, 59, 93);
+	border-radius: 10px;
+}
+
+.material-icons{
+	display: block;
+	font-size:85px ;
+	color:rgb(249, 212, 213);
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: default;
+}
+*/
 * {
   box-sizing: border-box;
 }
 body {
   font-family: 'Quicksand', sans-serif;
-  margin: 0;
-  padding: 0;
+  color: #828282;
 }
 #header {
-  background: #000 url('../../images/home/header/top-noivo-noiva.jpg') no-repeat;
+  background: #000 url('../../images/home/header/top-noivo-noiva.jpg') no-repeat fixed center;
   background-size: cover;
   color: #fff;
   width: 100%;
@@ -87,4 +199,43 @@ body {
 }
 #facility {
   text-align: center;
+  padding: 30px 0 30px 0;
+}
+#team .material-icons {
+  float: left;
+  height: 280px;
+  font-size: 60px;
+  margin-right: 10px;
+}
+#team h3 {
+  margin-top: 0;
+}
+#team h2 {
+  margin-bottom: 100px;
+}
+#services {
+  background: #fd8e94 url('../../images/acessoria/acessoria.jpg') no-repeat fixed center;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+}
+#services h2 {
+  padding: 24px 0 5px 0;
+  font-size: 54px;
+  color: #FFF;
+}
+#services h2:after {
+  background-color: #FFF;
+}
+#services h3 {
+  padding: 20px 0 5px 0;
+  color: #FFF;
+}
+#services p {
+  padding: 20px 0 5px 0;
+  margin-bottom: 85px;
+  color: #FFF;
+}
+#contact {
+  background-color: #F9F6F1;
 }

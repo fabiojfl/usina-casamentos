@@ -35,7 +35,7 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch('./assets/less/style.less',['less']);
+  gulp.watch('./assets/less/**/*.less',['less']);
   gulp.watch('./node_modules/jquery/dist/jquery.min.js',['js']);
   gulp.watch('./node_modules/bootstrap/dist/js/bootstrap.min.js',['js']);
 });
