@@ -30,7 +30,8 @@ gulp.task('less', function(){
 gulp.task('scripts', function(){
 	gulp.src([
 		'./node_modules/jquery/dist/jquery.min.js',
-		'./node_modules/bootstrap/dist/js/bootstrap.min.js'
+		'./node_modules/bootstrap/dist/js/bootstrap.min.js',
+    './public/build/js/googleapis.js'
 	]).pipe(gulp.dest('./public/build/js'))
 });
 

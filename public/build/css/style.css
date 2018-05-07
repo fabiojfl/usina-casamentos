@@ -78,10 +78,18 @@ p {
   padding: 10px 20px;
   text-decoration: none;
   transition: ease .5s all;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: #ef3b5d;
   color: #FFF;
+}
+.btn .btn-contact {
+  background-color: #ef3b5d;
+}
+.btn .btn-contact:hover {
+  background-color: red;
 }
 .icon-container {
   display: inline-block;
@@ -136,6 +144,11 @@ p {
 	cursor: default;
 }
 */
+nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -194,10 +207,11 @@ body {
 }
 #header nav ul li {
   display: inline-block;
-  margin: 0;
-  padding: 0;
 }
-#facility {
+#facility,
+#team,
+#service,
+#footer {
   text-align: center;
   padding: 30px 0 30px 0;
 }
@@ -237,5 +251,118 @@ body {
   color: #FFF;
 }
 #contact {
+  padding-bottom: 100px;
   background-color: #F9F6F1;
+}
+#contact #map {
+  width: 100%;
+  height: 200px;
+}
+#contact i {
+  float: left;
+  font-size: 22px;
+  margin-right: 10px;
+}
+#contact .btn {
+  float: right;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+#contact input {
+  border: 1px solid #F9F6F1;
+  border-bottom: 1px solid #e7e5e1;
+  border-radius: 2px;
+  padding: 20px;
+}
+#contact input:focus {
+  border: #000;
+  outline: 1px solid #777;
+}
+#contact input:focus {
+  color: #000;
+}
+#contact input:focus::placeholder {
+  color: white;
+}
+#contact textarea {
+  padding: 20px;
+  height: 170px;
+  border: 1px solid #e7e5e1;
+  border-bottom: 1px solid #F9F6F1;
+}
+#contact textarea:focus {
+  border: #000;
+  outline: 1px solid #777;
+}
+#contact textarea:focus {
+  color: #000;
+}
+#contact textarea:focus::placeholder {
+  color: white;
+}
+#footer {
+  background: #ef595d;
+  text-align: left;
+}
+#footer h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#footer h3:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #ffffff;
+  width: 50%;
+}
+#footer p {
+  color: #f4d6d7;
+}
+#footer nav ul {
+  padding-left: 0px;
+}
+#footer nav ul li {
+  padding: 3px 0 3px 0;
+  text-transform: uppercase;
+}
+#footer nav ul li a {
+  color: #f4d6d7;
+}
+#footer nav ul li a:hover {
+  color: #ffffff;
+}
+#footer a {
+  padding: 0 5px;
+  font-size: 13px;
+  display: inline-block;
+}
+#footer a em {
+  color: #F9F6F1;
+}
+#footer a:hover {
+  color: #F9F6F1;
+}
+#footer .social {
+  height: 200px;
+  line-height: 200px;
+  text-align: right;
+}
+#footer .social img {
+  vertical-align: middle;
+}
+#footer .social a {
+  opacity: .8;
+}
+#footer .social a:hover {
+  opacity: 1;
+  transition: ease .5s all;
+}
+#copyright {
+  text-align: center;
+  background-color: #ef1d24;
+  padding: 10px;
+  color: #ecbfc0;
+}
+#copyright em {
+  font-size: 8px;
 }

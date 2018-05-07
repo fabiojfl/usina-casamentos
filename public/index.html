@@ -7,6 +7,7 @@
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="build/css/style.css">
+		<script type="text/javascript"src="build/js/googleapis.js"></script>
 	</head>
 	<body>
 	<header id="header">
@@ -21,7 +22,7 @@
 	          <nav>
 	            <ul>
 	              <li ><a href="index.html" class="active">Início</a></li>
-	              <li><a href="quem-somos.html">Quem somos</a></li>
+	              <li><a href="quem-somos.html">A Usina</a></li>
 	              <li><a href="clientes.html">Serviços</a></li>
 	              <li><a href="equipe.html">Contatos</a></li>
 	            </ul>
@@ -43,7 +44,7 @@
 					<div class="col-md-12">
 						<h2>Facilidades</h2>
 						<p class="subtitle">
-							É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+							É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. Ambitioni dedisse scripsisse iudicaretur. Cras amattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
 						</p>		
 					</div>
 				</div>
@@ -90,7 +91,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h3>ASSESSORIA CASAMENTOS</h3>
-						<p>O nosso objetivo é tornar realidade a união de duas pessoas que se amam e a promover uma jornada repleta de paz, amor, compreensão e sinceros votos de felicidade. A nossa proposta é facilitar os contatos, serviços e parcerias, por meio de, uma assessória digna com todo o carinho que esse momento merece. Para a Usina de Sons Produções & Eventos o grande dia é motivo de orgulho porque é a certeza da união de familiares e amigos queridos que se materializa no momento tão importante na vida do casal. Contamos com os melhores parceiros em serviços os quais confiamos e indicamos como fornecedores.</p>			
+						<p>O nosso objetivo é tornar realidade a união de duas pessoas que se amam e a promover uma jornada repleta de paz, amor, compreensão e sinceros votos de felicidade. A nossa proposta é facilitar os contatos, serviços e parcerias, por meio de, uma assessória digna com todo o carinho que esse momento merece. Para a Usina de Sons Produções & Eventos o grande dia é motivo de orgulho porque é a certeza da união de familiares e amigos queridos que se materializa no momento tão importante na vida do casal. Contamos com os melhores parceiros em serviços os quais confiam e indicamos como fornecedores.</p>			
 					</div>
 				</div>
 			</div>
@@ -138,39 +139,70 @@
 		<section id="contact"><h2>Contatos</h2><!-- Contatos -->
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-sm-12 col-xs-12">
+					<div class="col-md-7 col-sm-12 col-xs-12">
 						<h3>Fale conosco</h3>
 						<div class="form-group">
 							<label for="">Nome:</label>
-							<input type="text" name="name" id="" class="form-control">
+							<input type="text" placeholder="Digite o seu nome" name="name" id="" class="form-control">
 						</div>
 						<div class="form-group">
 							<label for="">Email:</label>
-							<input type="email" name="email" id="" class="form-control">
+							<input type="email" placeholder="Adicione o seu email" name="email" id="" class="form-control" >
 						</div>
 						<div class="form-group">
 							<label for="">Mensagem:</label>
-							<textarea name="texto" class="form-control"></textarea>
+							<textarea name="texto" placeholder="Deixe a sua mensagem" id="" class="form-control"></textarea>
 						</div>
-						<submit class="btn btn-default" >Enviar</submit>
+						<submit class="btn btn-contact">Enviar</submit>
 					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<h3>Telefones</h3>
+					<div class="col-md-5 col-sm-12 col-xs-12 andress">
+						<h4>Telefones</h4>
 						<p><i class="material-icons">stay_primary_portrait</i>Celular:55 61 996299396</p>
 						<p><i class="material-icons">phone</i>Telefone: (61) 3702.2289</p>	
 						<p><i class="material-icons">mail_outline</i>email:contato@usinadesons.com.br</p>		
 						<h4>Endereço</h4>
 						<p>Asa Sul Entrequadra Sul 414/415 Bloco A Sala 147 - Asa Sul, Brasília - DF, 70297-400</p>
+						<h4>Localização</h4>
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer id="footer">
-		footer
-	</footer>	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-xs-12">
+					<!--<p><a href=""><img src="images/" alt=""></a></p>-->
+					<h3>A Usina</h3>
+					<p>Usina de Sons Produções e Eventos - uma produtora que vive cultura. A Usina surgiu A Usina surgiu no ano de 2003 onde funcionava o curso de música<a href="" title=""><em>Leia mais</em></a></p> 
+				</div>
+
+				<div class="col-md-2 col-xs-12">
+					<h3>Menu</h3>
+					<nav>
+			            <ul>
+			              <li><a href="quem-somos.html">A Usina</a></li>
+			              <li><a href="clientes.html">Serviços</a></li>
+			              <li><a href="equipe.html">Contatos</a></li>
+			            </ul>
+		          	</nav>
+				</div>
+
+				<div class="col-md-3 col-xs-12 social">
+					<a href=""><img src="images/social/face.png" alt="Facebook"></a>
+					<a href=""><img src="images/social/insta.png" alt="Pinterest"></a>
+					<a href=""><img src="images/social/pica.png" alt="Instagram"></a>			
+				</div>
+			</div>
+		</div>
+	</footer>
+		<div id="copyright">
+			&copy; Usina de Sons Produções e Eventos <em>CNPJ 05.769.196/0001-05</em>
+		</div>	
 	<script type="text/javascript"src="build/js/jquery.min.js"></script>
 	<script type="text/javascript"src="build/js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD05Pxq6HmAQExE9a60T_I38w-fFtKbQ4I&callback=initMap"></script>
 	</body>
 </html>
