@@ -167,20 +167,22 @@ body {
   background-size: cover;
   color: #fff;
   width: 100%;
-  height: 760px;
+  height: 795px;
   padding-top: 50px;
   position: relative;
 }
-#header .title {
-  text-align: center;
-  margin-top: 180px;
-  left: 0px;
-  top: 50%;
-  transform: translate(0, -50%);
+#header nav {
+  text-align: right;
 }
-#header .title h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 64px;
+#header nav ul li {
+  display: inline-block;
+}
+#header strong {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#header p {
+  color: #FFF;
 }
 #header a {
   display: inline-block;
@@ -198,6 +200,22 @@ body {
 #header a.active {
   background: #ef595d;
 }
+#header h3 {
+  color: #FFF;
+  font-size: 22px;
+  line-height: 28px;
+}
+#header .title {
+  text-align: center;
+  margin-top: 180px;
+  left: 0px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#header .title h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 64px;
+}
 #header .btn {
   background-color: #ef595d;
   font-size: 16px;
@@ -207,15 +225,6 @@ body {
 }
 #header .btn:hover {
   background-color: #ef3b5d;
-}
-#header nav {
-  text-align: right;
-}
-#header nav ul li {
-  display: inline-block;
-}
-#header strong {
-  margin-bottom: 45px;
 }
 #facility {
   text-align: center;
